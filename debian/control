@@ -1,51 +1,48 @@
 Source: kpmcore
+Section: kde
 Priority: optional
-Maintainer: Debian/Kubuntu Qt/KDE Team <debian-qt-kde@lists.debian.org>
+Maintainer: Jonathan Carter <jcarter@linux.com>
 Build-Depends: cmake,
-               debhelper (>= 9),
+               debhelper (>= 10),
                extra-cmake-modules,
-               kio-dev,
                libatasmart-dev,
                libblkid-dev,
                libkf5i18n-dev,
                libkf5iconthemes-dev,
+               libkf5kio-dev,
                libkf5service-dev,
+               libkf5widgetsaddons-dev,
                libparted-dev,
                pkg-config,
-               pkg-kde-tools,
-               qtbase5-dev
-Standards-Version: 3.9.5
-Section: libs
-Homepage: https://projects.kde.org/kpmcore
-Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/kpmcore.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/kpmcore.git
+               pkg-kde-tools
+Standards-Version: 3.9.8
+Homepage: https://github.com/KDE/kpmcore
+Vcs-Svn: svn://anonscm.debian.org/pkg-kde/kde-extras/partitionmanager/trunk/
+Vcs-Browser: https://anonscm.debian.org/viewvc/pkg-kde/kde-extras/partitionmanager/trunk/
 
-Package: libkpmcore-dev
-Section: libdevel
-Architecture: any
-Depends: kpmcore (= ${binary:Version}), ${misc:Depends}
-Description: library for managing partitions -- development headers
- Library for managing partitions, used by the KDE Partition Manager
- and other projects.
- .
- This package contains the development headers provided by the kpmcore
- project.
-
-Package: kpmcore
+Package: libkpmcore4
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: library for managing partitions
- Library for managing partitions, used by the KDE Partition Manager
- and other projects.
-
-Package: kpmcore-dbg
-Section: debug
-Architecture: any
-Depends: kpmcore (= ${binary:Version}), ${misc:Depends}
-Description: library for managing partitions -- debugging symbols
- Library for managing partitions, used by the KDE Partition Manager
- and other projects.
+Replaces: libkpmcore3
+Description: KDE Partition Manager Core
+ KDE Parition Partition Manager Core (KPM core) allows
+ software to re-use common partitioning GUI tasks.
  .
- This package contains the debugging symbols provided by the kpmcore
- project.
+ It is used in the generic system installer called Calamares
+ and may be used in more interfaces in the future. Right now it
+ is unlikely to be useful installed on its own.
 
+Package: libkpmcore4-dev
+Section: libdevel
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}, libkpmcore4 (= ${binary:Version})
+Replaces: libkpmcore3-dev
+Description: KDE Partition Manager Core development files
+ KDE Parition Partition Manager Core (KPM core) allows
+ software to re-use common partitioning GUI tasks.
+ .
+ It is used in the generic system installer called Calamares
+ and may be used in more interfaces in the future. Right now it
+ is unlikely to be useful installed on its own.
+ .
+ This package contains development files for kpmcore.
