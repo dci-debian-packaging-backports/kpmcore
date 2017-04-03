@@ -1,0 +1,10 @@
+.arcconfig
+CMakeLists.txt
+COPYING.GPL3
+INSTALL
+KPMcoreConfig.cmake.in
+cmake/
+src/
+po/
+obj-x86_64-linux-gnu
+debian/files
