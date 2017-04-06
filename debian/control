@@ -1,7 +1,8 @@
 Source: kpmcore
 Section: kde
 Priority: optional
-Maintainer: Jonathan Carter <jcarter@linux.com>
+Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
+Uploaders:  Jonathan Carter <jcarter@linux.com>
 Build-Depends: cmake,
                debhelper (>= 10),
                extra-cmake-modules,
@@ -32,11 +33,11 @@ Description: KDE Partition Manager Core
  and may be used in more interfaces in the future. Right now it
  is unlikely to be useful installed on its own.
 
-Package: libkpmcore4-dev
+Package: libkpmcore-dev
 Section: libdevel
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, libkpmcore4 (= ${binary:Version})
-Replaces: libkpmcore3-dev
+Replaces: libkpmcore3-dev, libkpmcore4-dev
 Description: KDE Partition Manager Core development files
  KDE Parition Partition Manager Core (KPM core) allows
  software to re-use common partitioning GUI tasks.
