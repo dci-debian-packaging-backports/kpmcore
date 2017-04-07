@@ -2,6 +2,7 @@ kpmcore (3.0.3-1) experimental; urgency=medium
 
   * New upstream release
   * Migrate from gitlab.com to git.debian.org
+  * Update debian/copyright
 
  -- Jonathan Carter <jcarter@linux.com>  Wed, 22 Mar 2017 11:51:02 +0200
 
