@@ -20,10 +20,9 @@ Standards-Version: 4.0.0
 Homepage: https://github.com/KDE/kpmcore
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-kde/kde-extras/kpmcore.git/
 Vcs-Git: https://anonscm.debian.org/git/pkg-kde/kde-extras/kpmcore.git
-Testsuite: autopkgtest
 
 Package: libkpmcore5
-Architecture: any
+Architecture: linux-any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Replaces: libkpmcore3, libkpmcore4
 Description: KDE Partition Manager Core
@@ -36,7 +35,7 @@ Description: KDE Partition Manager Core
 
 Package: libkpmcore-dev
 Section: libdevel
-Architecture: any
+Architecture: linux-any
 Depends: ${misc:Depends}, ${shlibs:Depends},
  libkpmcore5 (= ${binary:Version}), libatasmart-dev
 Replaces: libkpmcore3-dev, libkpmcore4-dev
