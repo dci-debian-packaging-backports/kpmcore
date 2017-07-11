@@ -2,7 +2,7 @@ Source: kpmcore
 Section: kde
 Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
-Uploaders:  Jonathan Carter <jcarter@linux.com>
+Uploaders: Jonathan Carter <jcarter@linux.com>
 Build-Depends: cmake,
                debhelper (>= 10),
                extra-cmake-modules,
