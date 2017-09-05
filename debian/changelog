@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+kpmcore (3.1.2-2) unstable; urgency=medium
+
+  * Add corresponding breaks field for the replace field (Closes: #870435)
+  * Update maintainer email address
+  * Update standards version to 4.1.0.0
+
+ -- Jonathan Carter <jcc@debian.org>  Tue, 29 Aug 2017 09:45:05 +0200
+
+=======
+>>>>>>> e988a39f67713170ac8d767e9010940fd2da9b6f
 kpmcore (3.1.2-1) unstable; urgency=medium
 
   * New upstream release
