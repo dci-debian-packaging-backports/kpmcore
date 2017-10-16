@@ -1,3 +1,10 @@
+kpmcore (3.2.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Update standards version to 4.1.1
+
+ -- Jonathan Carter <jcc@debian.org>  Fri, 06 Oct 2017 15:52:21 +0200
+
 kpmcore (3.1.2-2) unstable; urgency=medium
 
   * Add corresponding breaks field for the replace field (Closes: #870435)
