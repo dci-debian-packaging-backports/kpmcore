@@ -1,3 +1,10 @@
+kpmcore (3.2.1-3) unstable; urgency=medium
+
+  * Revert target architectures to linux-any
+    (Closes: #881497, #881031)
+
+ -- Jonathan Carter <jcc@debian.org>  Mon, 13 Nov 2017 09:29:00 +0200
+
 kpmcore (3.2.1-2) unstable; urgency=medium
 
   * Update symbols file

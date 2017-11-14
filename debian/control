@@ -22,7 +22,7 @@ Vcs-Browser: https://anonscm.debian.org/cgit/pkg-kde/kde-extras/kpmcore.git/
 Vcs-Git: https://anonscm.debian.org/git/pkg-kde/kde-extras/kpmcore.git
 
 Package: libkpmcore6
-Architecture: amd64 arm64 armel armhf i386 mips mips64el mipsel s390x hppa powerpc ppc64 sh4 sparc64 x32
+Architecture: linux-any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Replaces: libkpmcore3, libkpmcore4, libkpmcore5
 Breaks: libkpmcore3, libkpmcore4, libkpmcore5
