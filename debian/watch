@@ -1,2 +1,2 @@
 version=3
-http://download.kde.org/stable/kpmcore/([\d.]+)/src/kpmcore-([\d.]+)\.tar\.xz
+https://download.kde.org/stable/kpmcore/([\d.]+)/src/kpmcore-([\d.]+)\.tar\.xz
