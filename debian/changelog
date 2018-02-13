@@ -1,3 +1,18 @@
+kpmcore (3.3.0-3) unstable; urgency=medium
+
+  * Remove build-dependencies that are no longed needed
+    - libkf5service-dev
+    - libkf5iconthemes-dev
+    - libkf5kio-dev
+
+ -- Jonathan Carter <jcc@debian.org>  Fri, 09 Feb 2018 13:34:01 +0200
+
+kpmcore (3.3.0-2) unstable; urgency=medium
+
+  * Depend libkpmcore-dev on correct libkpmcore (Closes: #887874)
+
+ -- Jonathan Carter <jcc@debian.org>  Thu, 25 Jan 2018 14:23:36 +0200
+
 kpmcore (3.3.0-1) unstable; urgency=medium
 
   * New upstream release

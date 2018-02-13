@@ -9,9 +9,6 @@ Build-Depends: cmake,
                libatasmart-dev,
                libblkid-dev (>= 2.30),
                libkf5i18n-dev,
-               libkf5iconthemes-dev,
-               libkf5kio-dev,
-               libkf5service-dev,
                libkf5widgetsaddons-dev,
                libparted-dev,
                pkg-config,
@@ -38,7 +35,7 @@ Package: libkpmcore-dev
 Section: libdevel
 Architecture: linux-any
 Depends: ${misc:Depends}, ${shlibs:Depends},
- libkpmcore6 (= ${binary:Version}), libatasmart-dev
+ libkpmcore7 (= ${binary:Version}), libatasmart-dev
 Replaces: libkpmcore3-dev, libkpmcore4-dev
 Description: KDE Partition Manager Core development files
  KDE Parition Partition Manager Core (KPM core) allows
